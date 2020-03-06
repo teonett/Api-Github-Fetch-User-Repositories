@@ -18,8 +18,8 @@ You should have received a copy of the GNU General Public License along with thi
 <h5> Sample pages retrieved</h5>
 <img src="https://github.com/teonett/Javascript-Api-Github-Fetch-User-Repositories/blob/master/001-api-git-user-repository.png">
 
-<img src="https://github.com/teonett/Javascript-Api-Github-Fetch-User-Repositories/blob/master/002-api-git-user-repository.png">
-
 <img src="https://github.com/teonett/Javascript-Api-Github-Fetch-User-Repositories/blob/master/003-api-git-user-repository.png">
 
 <img src="https://github.com/teonett/Javascript-Api-Github-Fetch-User-Repositories/blob/master/004-api-git-user-repository.png">
+
+<img src="https://github.com/teonett/Javascript-Api-Github-Fetch-User-Repositories/blob/master/002-api-git-user-repository.png">
