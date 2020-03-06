@@ -1,6 +1,6 @@
 # Javascript Api Github Fetch User Repositories
 
-<p> Exmple javascript how to retrieve user information from API GitHub</p>
+<p> Exmple how to retrieve user information from API GitHub using javascript</p>
   <li>https://api.github.com/users/teonett</li>
   <li>https://api.github.com/users/teonett/repos</li>
 
