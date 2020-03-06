@@ -88,11 +88,10 @@ section {
 
 table
 {
-    border: 1px solid #ccc;
     border-collapse:collapse;
     color: #FFFFFF;
     padding-left: 50px;
-
+    width: 1000px;
 }
 
 table th
@@ -103,7 +102,6 @@ table th
 
 table th, table td
 {
-    border: 1px solid #ccc;
     padding: 5px;
 }
 
@@ -112,5 +110,22 @@ table tr:nth-child(even) {
 }
 
 table tr:nth-child(odd) {
-    background: #0F0460
+    background: #00004d
+}
+
+img {
+    width:177px;
+    height: 177px;
+}
+
+.head-user {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: xx-large;
+    font-family: 'Oswald', sans-serif;
+}
+
+.div-user {
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
 }
