@@ -1,6 +1,6 @@
 # Javascript Api Github Fetch User Repositories
 
-<p> Exmple javascript how to retrieve user information from API GitHub/p>
+<p> Exmple javascript how to retrieve user information from API GitHub</p>
   <li>https://api.github.com/users/teonett</li>
   <li>https://api.github.com/users/teonett/repos</li>
 
@@ -15,7 +15,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public
 You should have received a copy of the GNU General Public License along with this program.  If not, see <http://www.gnu.org/licenses/>
 </p>
 
-<h5> Sample data retrieved typing the name of user and clicking Submit</h5>
+<h5> Sample pages retrieved</h5>
 <img src="https://github.com/teonett/Javascript-Api-Github-Fetch-User-Repositories/blob/master/001-api-git-user-repository.png">
 
 <img src="https://github.com/teonett/Javascript-Api-Github-Fetch-User-Repositories/blob/master/002-api-git-user-repository.png">
