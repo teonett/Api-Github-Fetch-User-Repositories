@@ -104,11 +104,13 @@ const createTemplate = function(repo_name, url, dtcreated, dtupdated, descriptio
                 <td colspan="4" class="p0"><a href="${url}" title="Click here to redirect to the project">${repo_name.toUpperCase().split('-').join(' ')}</a></td>
             </tr>
             <tr><td colspan="4" class="desc">${description}</td></tr>
-            <tr>
+            <tr style="text-align:center;">
                 <td>Date Created:</td>
-                <td style="text-align: left;">${dtcreated.getMonth()}/${dtcreated.getDate()}/${dtcreated.getFullYear()}</td>
                 <td>Last update:</td>
-                <td style="text-align: left;">${dtupdated.getMonth()}/${dtupdated.getDate()}/${dtupdated.getFullYear()}</td>
+            </tr>
+            <tr style="text-align:center;">
+                <td>${dtcreated.getMonth()}/${dtcreated.getDate()}/${dtcreated.getFullYear()}</td>
+                <td>${dtupdated.getMonth()}/${dtupdated.getDate()}/${dtupdated.getFullYear()}</td>
             </tr>
         </table>
     </section>
