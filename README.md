@@ -15,11 +15,15 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public
 You should have received a copy of the GNU General Public License along with this program.  If not, see <http://www.gnu.org/licenses/>
 </p>
 
-<h5> Sample pages retrieved</h5>
+<h3> Sample pages retrieved</h3>
 <img src="https://github.com/teonett/Javascript-Api-Github-Fetch-User-Repositories/blob/master/001-teonett.png">
 
 <img src="https://github.com/teonett/Javascript-Api-Github-Fetch-User-Repositories/blob/master/002-github.png">
 
-<img src="https://github.com/teonett/Javascript-Api-Github-Fetch-User-Repositories/blob/master/004-api-git-user-repository.png">
+<img src="https://github.com/teonett/Javascript-Api-Github-Fetch-User-Repositories/blob/master/003-google">
 
-<img src="https://github.com/teonett/Javascript-Api-Github-Fetch-User-Repositories/blob/master/002-api-git-user-repository.png">
+<img src="https://github.com/teonett/Javascript-Api-Github-Fetch-User-Repositories/blob/master/004-facebook.png">
+
+<img src="https://github.com/teonett/Javascript-Api-Github-Fetch-User-Repositories/blob/master/004-microsoft.png">
+
+<img src="https://github.com/teonett/Javascript-Api-Github-Fetch-User-Repositories/blob/master/004-oracle.png">
