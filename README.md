@@ -24,6 +24,8 @@ You should have received a copy of the GNU General Public License along with thi
 
 <img src="https://github.com/teonett/Javascript-Api-Github-Fetch-User-Repositories/blob/master/004-facebook.png">
 
-<img src="https://github.com/teonett/Javascript-Api-Github-Fetch-User-Repositories/blob/master/004-microsoft.png">
+<img src="https://github.com/teonett/Javascript-Api-Github-Fetch-User-Repositories/blob/master/005-microsoft.png">
+
+<img src="https://github.com/teonett/Javascript-Api-Github-Fetch-User-Repositories/blob/master/06-oracle.png">
 
 <img src="https://github.com/teonett/Javascript-Api-Github-Fetch-User-Repositories/blob/master/004-oracle.png">
