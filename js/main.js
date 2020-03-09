@@ -1,5 +1,6 @@
 
 function formSubmit(){
+
     $('form').submit(event => {
 
         event.preventDefault();
@@ -26,33 +27,44 @@ function loadUsers(username){
             var users = JSON.parse(this.responseText);
 
             var output = `
-            <h3 class="head-user">${users.name}</h3>
-            <table>
-                <tr>
-                    <td rowspan="5"><img src="${users.avatar_url}"></td>
-                    <td></td>
-                    <td>Repositórios : ${users.public_repos}</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Gists : ${users.public_gists}</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Location : ${users.location}</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Bio : ${users.bio}</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><a class="btn btn-default" target="_blank" href="${users.html_url}">Visit Github</a></td>
-                </tr>             
-            </table>
-            
-            <th><h3 class="head-user">Avalilable Repositories List</h3><th>
+            <h1 align="center">${users.name}</h1>
 
+            <div class="flex-container">
+                
+                <div style="width: auto"><img src="${users.avatar_url}"></div>
+
+                <div class="w3-tag w3-round w3-blue" style="padding:5px">
+                    <div class="w3-tag w3-round w3-blue">
+                        <label style="font-size: 14px;">Repositories</label><br>
+                        <p class="w3-tag w3-teal">${users.public_repos}</p>
+                    </div>
+                </div>
+
+                <div class="w3-tag w3-round w3-blue w3-border-white" style="padding:5px">
+                    <div class="w3-tag w3-round w3-blue">
+                        <label style="font-size: 14px;">Gists</label><br>
+                        <p class="w3-tag w3-red">0${users.public_gists}</p>
+                    </div>
+                </div>
+
+                <div class="w3-tag w3-round w3-blue" style="padding:3px; width: auto;">
+                    <div class="w3-tag w3-round w3-blue" style="width: 250px">
+                        <label style="font-size: 14px;">Location</label><br>
+                        <label style="font-size: 16px;">${users.location}</label>
+                    </div>
+                </div>
+
+                <div class="w3-tag w3-round w3-blue" style="padding:3px; width: 900px; text-align: left;">
+                    <div class="w3-tag w3-round w3-blue">
+                    <label style="font-size: 14px;">User Biography</label><br>
+                    <label style="font-size: 16px;">${users.bio}</label>
+                    </div>
+                </div>
+            </div>
+
+            <a class="btn btn-default" target="_blank" href="${users.html_url}">Visit Github</a>
+            
+            <h1 align="center">Available Repositories List</h1>
             `
 
             document.getElementById('users').innerHTML = output;
@@ -86,8 +98,8 @@ function displayRepos(responseJson){
             description, 
         } = repo;
         
-        let dateCreated = new Date(created_at);
-        let dateUpdated =  new Date(updated_at);
+        let dateCreated = created_at;
+        let dateUpdated = updated_at;
 
         $('.repos').append(createTemplate(name, html_url, dateCreated, dateUpdated, description));
 
@@ -99,24 +111,34 @@ const createTemplate = function(repo_name, url, dtcreated, dtupdated, descriptio
 
     let template = `
     <section>
-        <table>
-            <tr>
-                <td colspan="4" class="p0"><a href="${url}" title="Click here to redirect to the project">${repo_name.toUpperCase().split('-').join(' ')}</a></td>
-            </tr>
-            <tr><td colspan="4" class="desc">${description}</td></tr>
-            <tr style="text-align:center;">
-                <td>Date Created:</td>
-                <td>Last update:</td>
-            </tr>
-            <tr style="text-align:center;">
-                <td>${dtcreated.getMonth()}/${dtcreated.getDate()}/${dtcreated.getFullYear()}</td>
-                <td>${dtupdated.getMonth()}/${dtupdated.getDate()}/${dtupdated.getFullYear()}</td>
-            </tr>
-        </table>
+
+        <div class="flex-container">
+            <div class="w3-tag w3-round w3-blue" style="padding:3px; width: 320px; text-align: left;">
+                <div class="ex1">
+                    <label style="font-size: 14px; text-align: left;">Project Name</label><br>
+                    <a class="a1" href="${url}" title="Click here to redirect to the project">${repo_name.split('-').join(' ')}</a>
+                </div>
+            </div>
+            <div class="w3-tag w3-round w3-blue" style="padding:3px; width: 220px;">
+                <label style="font-size: 14px; text-align: left;">Created</label><br>
+                <div class="ex2">${dtcreated.substring(0,10)}</div>
+            </div>
+            <div class="w3-tag w3-round w3-blue" style="padding:3px; width: 220px;">
+                <label style="font-size: 14px; text-align: left;">Updated</label><br>
+                <div class="ex2">${dtupdated.substring(0,10)}</div>
+            </div>
+            <div class="w3-tag w3-round w3-blue" style="padding:3px; width: 900px; text-align: left;">
+                <div class="titulo-center">
+                <label style="font-size: 14px; text-align: left;">Project Description</label><br>
+                </div>
+                <div class="ex3">${description}</div>
+            </div>
+        </div>
+
+
     </section>
     `;
 
-    
     return template;
 };
 
