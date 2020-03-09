@@ -20,7 +20,7 @@ You should have received a copy of the GNU General Public License along with thi
 
 <img src="https://github.com/teonett/Javascript-Api-Github-Fetch-User-Repositories/blob/master/002-github.png">
 
-<img src="https://github.com/teonett/Javascript-Api-Github-Fetch-User-Repositories/blob/master/003-google">
+<img src="https://github.com/teonett/Javascript-Api-Github-Fetch-User-Repositories/blob/master/003-google.png">
 
 <img src="https://github.com/teonett/Javascript-Api-Github-Fetch-User-Repositories/blob/master/004-facebook.png">
 
